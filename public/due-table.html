@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from codervent.com/rukada/color-admin/table-data-tables.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2019 15:12:24 GMT -->
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>ESTATE MASTER</title>
+  <!--favicon-->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- simplebar CSS-->
+  <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+  <!-- Bootstrap core CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <!--Data Tables -->
+  <link href="assets/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+  <!-- animate CSS-->
+  <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+  <link href="css/sb-admin-2.css" rel="stylesheet">
+  <!-- Icons CSS-->
+  <link href="assets/css/icons.css" rel="stylesheet" type="text/css"/>
+
+  <!-- Custom Style-->
+  <link href="assets/css/app-style.css" rel="stylesheet"/>
+  
+</head>
+
+<body>
+
+<!-- Start wrapper-->
+<div id="wrapper">
+<!-- Sidebar -->
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon ">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">Estate Master </div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        MAIN
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-home"></i>
+            <span>Units</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Summary</h6>
+                <a class="collapse-item" href="rooms.html">Vaccant</a>
+                <a class="collapse-item" href="rooms.html">Occupied</a>
+                <a class="collapse-item" href="data-table.html">Table View</a>
+
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <i class="fas fa-fw fa-person-booth"></i>
+            <span>Tenants</span>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Summary</h6>
+                <a class="collapse-item" href="#">Parmanent</a>
+                <a class="collapse-item" href="#">Temporary</a>
+                <a class="collapse-item" href="data-table.html">Table View</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            <i class="fas fa-fw fa-dollar-sign"></i>
+            <span>Rent</span>
+        </a>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Summary</h6>
+                <a class="collapse-item" href="#">Received</a>
+                <a class="collapse-item" href="#">Rec-Table View</a>
+                <a class="collapse-item" href="#">Due</a>
+                <a class="collapse-item" href="#">Due-Table View</a>
+            </div>
+        </div>
+
+
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Addons
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-comments"></i>
+            <span class="badge badge-danger badge-counter">10+</span>
+            <span>Notifications</span>
+        </a>
+
+    </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+            <i class="fas fa-fw fa-bell"></i>
+            <span class="badge badge-danger badge-counter">3+</span>
+            <span>Alerts</span>
+        </a>
+
+    </li>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Analytics</span>
+        </a>
+    </li>
+
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="data-table.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Print Preview</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="max-height:7vh;">
+
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+    <i class="fa fa-bars"></i>
+  </button>
+
+            <!-- Topbar Search -->
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="input-group" >
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" style="max-height:5vh;">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" style="max-height:5vh; background:blue;">
+          <i class="fas fa-search fa-sm"></i>
+        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+
+                <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                <li class="nav-item dropdown no-arrow d-sm-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-search fa-fw"></i>
+                    </a>
+                    <!-- Dropdown - Messages -->
+                    <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                        <form class="form-inline mr-auto w-100 navbar-search">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                <i class="fas fa-search fa-sm"></i>
+              </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <!-- Nav Item - Alerts -->
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell fa-fw"></i>
+                        <!-- Counter - Alerts -->
+                        <span class="badge badge-danger badge-counter">3+</span>
+                    </a>
+                </li>
+
+                <!-- Nav Item - Messages -->
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <!-- Counter - Messages -->
+                        <span class="badge badge-danger badge-counter">7</span>
+                    </a>
+                    
+                </li>
+
+                <div class="topbar-divider d-none d-sm-block"></div>
+
+                <!-- Logout Butoon-->
+                <li class="nav-item">
+                    <a class="nav-link " href="login.html" style="color: blue;">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" style="color: blue;"></i> Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+     
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header"><i class="fa fa-table"></i> Estate Master Data Table</div>
+            <div class="card-body">
+              <div class="table-responsive">
+              <table id="example" class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                    </tr>
+                    <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                    </tr>
+                    <tr>
+                        <td>Cedric Kelly</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                    </tr>
+                    <tr>
+                        <td>Airi Satou</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>33</td>
+                        <td>2008/11/28</td>
+                        <td>$162,700</td>
+                    </tr>
+                    <tr>
+                        <td>Brielle Williamson</td>
+                        <td>Integration Specialist</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                    </tr>
+                    <tr>
+                        <td>Herrod Chandler</td>
+                        <td>Sales Assistant</td>
+                        <td>San Francisco</td>
+                        <td>59</td>
+                        <td>2012/08/06</td>
+                        <td>$137,500</td>
+                    </tr>
+                    <tr>
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td>2010/10/14</td>
+                        <td>$327,900</td>
+                    </tr>
+                    <tr>
+                        <td>Colleen Hurst</td>
+                        <td>Javascript Developer</td>
+                        <td>San Francisco</td>
+                        <td>39</td>
+                        <td>2009/09/15</td>
+                        <td>$205,500</td>
+                    </tr>
+                    <tr>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td>2008/12/13</td>
+                        <td>$103,600</td>
+                    </tr>
+                    <tr>
+                        <td>Jena Gaines</td>
+                        <td>Office Manager</td>
+                        <td>London</td>
+                        <td>30</td>
+                        <td>2008/12/19</td>
+                        <td>$90,560</td>
+                    </tr>
+                    <tr>
+                        <td>Quinn Flynn</td>
+                        <td>Support Lead</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2013/03/03</td>
+                        <td>$342,000</td>
+                    </tr>
+                    <tr>
+                        <td>Charde Marshall</td>
+                        <td>Regional Director</td>
+                        <td>San Francisco</td>
+                        <td>36</td>
+                        <td>2008/10/16</td>
+                        <td>$470,600</td>
+                    </tr>
+                    <tr>
+                        <td>Haley Kennedy</td>
+                        <td>Senior Marketing Designer</td>
+                        <td>London</td>
+                        <td>43</td>
+                        <td>2012/12/18</td>
+                        <td>$313,500</td>
+                    </tr>
+                    <tr>
+                        <td>Tatyana Fitzpatrick</td>
+                        <td>Regional Director</td>
+                        <td>London</td>
+                        <td>19</td>
+                        <td>2010/03/17</td>
+                        <td>$385,750</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Silva</td>
+                        <td>Marketing Designer</td>
+                        <td>London</td>
+                        <td>66</td>
+                        <td>2012/11/27</td>
+                        <td>$198,500</td>
+                    </tr>
+                    <tr>
+                        <td>Paul Byrd</td>
+                        <td>Chief Financial Officer (CFO)</td>
+                        <td>New York</td>
+                        <td>64</td>
+                        <td>2010/06/09</td>
+                        <td>$725,000</td>
+                    </tr>
+                    <tr>
+                        <td>Gloria Little</td>
+                        <td>Systems Administrator</td>
+                        <td>New York</td>
+                        <td>59</td>
+                        <td>2009/04/10</td>
+                        <td>$237,500</td>
+                    </tr>
+                    <tr>
+                        <td>Bradley Greer</td>
+                        <td>Software Engineer</td>
+                        <td>London</td>
+                        <td>41</td>
+                        <td>2012/10/13</td>
+                        <td>$132,000</td>
+                    </tr>
+                    <tr>
+                        <td>Dai Rios</td>
+                        <td>Personnel Lead</td>
+                        <td>Edinburgh</td>
+                        <td>35</td>
+                        <td>2012/09/26</td>
+                        <td>$217,500</td>
+                    </tr>
+                    <tr>
+                        <td>Jenette Caldwell</td>
+                        <td>Development Lead</td>
+                        <td>New York</td>
+                        <td>30</td>
+                        <td>2011/09/03</td>
+                        <td>$345,000</td>
+                    </tr>
+                    <tr>
+                        <td>Yuri Berry</td>
+                        <td>Chief Marketing Officer (CMO)</td>
+                        <td>New York</td>
+                        <td>40</td>
+                        <td>2009/06/25</td>
+                        <td>$675,000</td>
+                    </tr>
+                    <tr>
+                        <td>Caesar Vance</td>
+                        <td>Pre-Sales Support</td>
+                        <td>New York</td>
+                        <td>21</td>
+                        <td>2011/12/12</td>
+                        <td>$106,450</td>
+                    </tr>
+                    <tr>
+                        <td>Doris Wilder</td>
+                        <td>Sales Assistant</td>
+                        <td>Sidney</td>
+                        <td>23</td>
+                        <td>2010/09/20</td>
+                        <td>$85,600</td>
+                    </tr>
+                    <tr>
+                        <td>Angelica Ramos</td>
+                        <td>Chief Executive Officer (CEO)</td>
+                        <td>London</td>
+                        <td>47</td>
+                        <td>2009/10/09</td>
+                        <td>$1,200,000</td>
+                    </tr>
+                    
+                  
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Row-->
+
+    </div>
+    <!-- End container-fluid-->
+    
+    </div><!--End content-wrapper-->
+   <!--Start Back To Top Button-->
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+	
+	<!--Start footer-->
+	<footer class="footer">
+      <div class="container">
+        <div class="text-center">
+          Copyright © 2018 Rukada Admin
+        </div>
+      </div>
+    </footer>
+	<!--End footer-->
+   
+  </div><!--End wrapper-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+	
+
+
+  <!--Data Tables js-->
+  <script src="assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/dataTables.buttons.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/jszip.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/pdfmake.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/vfs_fonts.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/buttons.html5.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/buttons.print.min.js"></script>
+  <script src="assets/plugins/bootstrap-datatable/js/buttons.colVis.min.js"></script>
+
+    <script>
+     $(document).ready(function() {
+      //Default data table
+       $('#default-datatable').DataTable();
+
+
+       var table = $('#example').DataTable( {
+        lengthChange: false,
+        buttons: [ 'copy', 'excel', 'pdf', 'print' ]
+      } );
+ 
+     table.buttons().container()
+        .appendTo( '#example_wrapper .col-md-6:eq(0)' );
+      
+      } );
+
+    </script>
+	
+</body>
+
+</html>

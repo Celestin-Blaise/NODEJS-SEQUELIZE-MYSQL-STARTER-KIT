@@ -1,0 +1,255 @@
+
+
+<div class="flex-wrapper" style="display: flex; background: #106284; " >
+  <div class="flex-content1" style="flex: 3; background: #106284; background-attachment:fixed; min-height:98vh; max-height:98vh;">
+        <div class="image" style="height:40%;">
+          <img
+            src="/static/2.jfif"
+            height="100%"
+            width="100%"
+            alt=""
+          />
+        </div>
+      {{#each notes}}
+        <div
+          class="ref"
+          style="color:orangered; border: 5px solid white; margin: 20px; padding: 5px 0 10px 0px; max-height:6%;"
+        >
+          <h5 style="color:orangered; margin:0; padding:0 20px;">
+            REFERENCE NUMBER:
+          </h5>
+        </div>
+        <h3 style="color:WHITE; margin:0; padding:0 25px;">
+          {{this.ref}}
+        </h3>
+        <div
+          class="ref"
+          style="color:orangered; border: 5px solid white; margin: 20px; padding: 5px 0 10px 0px; max-height:6%;"
+        >
+          <h5 style="color:orangered; margin:0; padding:0 20px;">
+            PATIENT NAME:
+          </h5>
+        </div>
+        <h3 style="color:WHITE; margin:0; padding:0 25px;">
+          {{this.name}}
+        </h3>
+        <div
+          class="ref"
+          style="color:orangered; border: 5px solid white; margin: 20px; padding: 5px 0 10px 0px; max-height:6%;"
+        >
+          <h5 style="color:orangered; margin:0; padding:0 20px;">
+            DATE OF ENTRY:
+          </h5>
+        </div>
+        <h3 style="color:WHITE; margin:0; padding:0 25px;">
+          {{this.date}}
+        </h3>
+      {{/each}}
+  </div>
+  <div class="flex-content2" style="flex: 9; background:azure; background-attachment: fixed;">
+    <div
+      class="main-header"
+      style="flex: 3; background: #106284; background-attachment: fixed; min-height:20vh;  padding: 20px 0;"
+    >
+    {{#if notes}}
+    {{else}}
+      <a
+      id="addNotesBtn"
+        href="http://localhost/HMS/Sale/POS"
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #1089ff; border:1px solid 1089ff; border-radius:20px; top: 1%; " data-toggle="modal" data-target="#addNotes">
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #1089ff; border:1px solid #1089ff; border-radius:20px; color: white;" data-toggle="modal" data-target="#addNotes">
+
+          Add
+        </button>
+      </a>
+
+
+         <a
+        href="http://localhost/HMS/Sale/POS"
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #fc6119; border:1px solid 1089ff; border-radius:20px; top: 15%;"
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #fc6119; border:1px solid #fc6119; border-radius:20px; color: white;"
+        >
+          Go Back
+        </button>
+      </a>
+
+      {{/if}}
+
+  {{#if notes}}
+      <a
+        href="http://localhost/HMS/Sale/POS"
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #fc6119; border:1px solid 1089ff; border-radius:20px; top: 2%;"
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #fc6119; border:1px solid #fc6119; border-radius:20px; color: white;"
+        >
+          Go Back
+        </button>
+      </a>
+      <a
+      id="edit"
+
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #1089ff; border:1px solid 1089ff; border-radius:20px;  top: 16%; " data-toggle="modal" data-target="#ModalAddUnit"
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #1089ff; border:1px solid #1089ff; border-radius:20px; color: white;"
+        data-toggle="modal" data-target="#ModalAddUnit">
+          Edit
+        </button>
+      </a>
+
+         <a
+      id="addNotesBtn"
+        href="http://localhost/HMS/Sale/POS"
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #1089ff; border:1px solid 1089ff; border-radius:20px; top: 1%; display:none; " data-toggle="modal" data-target="#addNotes">
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #1089ff; border:1px solid #1089ff; border-radius:20px; color: white;" data-toggle="modal" data-target="#addNotes">
+
+          Add
+        </button>
+      </a>
+      <a
+        id="save"
+        style="cursor: pointer; text-decoration: none; font-weight:bold; position: absolute; right:0%; width:8%; height:42px; background-color: #1089ff; border:1px solid 1089ff; border-radius:20px;  top: 16%; display: none;"
+      >
+        <button
+          style="cursor: pointer; font-weight:bold; position: absolute; right:0%; width:120%; height:42px; font-size: 16px; background-color: #1089ff; border:1px solid #1089ff; border-radius:20px; color: white;"
+        >
+          Save Changes
+        </button>
+      </a>
+        {{else}}
+    {{/if}}
+        <h1  style="color:orangered; border: 5px solid white; margin: 10px; height: 15vh;" >
+          <center style="padding: 20px 0;">
+
+          HOSPITAL MASTER
+          </center>
+        </h1>
+    </div>
+
+    {{#if notes}}
+      {{#each notes}}
+
+          <h2 style="border: 5px solid black; width: 15%; padding: 0 20px; margin: 10px 20px;">
+            <strong style="color: red;">
+              NOTES
+            </strong>
+          </h2>
+        </center>
+        <h4 id="mainContent2"
+          style="
+                    overflow-wrap: break-word;
+
+        font-weight: 200; padding: 20px; font-family:Georgia, serif; font-size: 18px;"
+        >
+          {{{this.content}}}
+
+
+        </h4>
+
+
+
+<!-- Modal Form-->
+<div id="ModalAddUnit" class="modal fade" style="margin-top:-20px; ">
+<div class="modal-dialog" role="document" >
+<div class="modal-content"  style=" width: 200%; height: 120vh; position: relative; right: 40%;" >
+    <div class="modal-body">
+        <form role="form" id="editNotes" name="editNotes" >
+            <div class="flex" style="display: flex; justify-content:space-between; ">
+            <div class="form-group">
+                <label class="control-label">Ref:</label>
+                <div>
+                    <input type="text" value="{{this.ref}}" class="form-control input-lg" name="ref" id="ref">
+                </div>
+            </div>
+                                <div class="form-group">
+                                    <label class="control-label">Patient:</label>
+                                    <div>
+                                        <input type="text" value="{{this.name}}" class="form-control input-lg" name="name" id="name">
+                                    </div>
+                                </div>
+            </div>
+
+
+    <div class="form-group">
+        <label class="control-label">Type Your Content:</label>
+        <div>
+            <textarea type="text" class="form-control input-lg ckeditor" name="content1" id="content1" >
+              {{{this.content}}}
+              </textarea>
+        </div>
+    </div>
+    <div class="form-group">
+            <div class="form-group">
+                <div  style="display:flex; justify-content:space-between;">
+                    <button type="submit" class="btn btn-success">Save</button>
+
+                    <a href="#"  class="btn btn-danger" data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+      {{/each}}
+    {{else}}
+      <center>
+        <h1 style="color: red; margin-top:200px;">
+          No Patient Records Available.You Can Proceed To Add Notes !!!
+        </h1>
+      </center>
+    {{/if}}
+  </div>
+</div>
+
+
+<!-- Modal Form-->
+<div id="addNotes" class="modal fade" style="margin-top:-20px; ">
+<div class="modal-dialog" role="document" >
+<div class="modal-content"  style=" width: 200%; height: 120vh; position: relative; right: 40%;" >
+    <div class="modal-body">
+        <form role="form" id="addNotes" name="addNotes" >
+            <div class="flex" style="display: flex; justify-content:space-between; ">
+            <div class="form-group">
+                <label class="control-label">Ref:</label>
+                <div>
+                    <input type="text" value="{{this.ref}}" class="form-control input-lg" name="ref" id="ref">
+                </div>
+            </div>
+                                <div class="form-group">
+                                    <label class="control-label">Patient:</label>
+                                    <div>
+                                        <input type="text" value="{{this.name}}" class="form-control input-lg" name="name" id="name">
+                                    </div>
+                                </div>
+            </div>
+
+    <div class="form-group">
+        <label class="control-label">Type Your Content:</label>
+        <div>
+            <textarea style="  min-height:400px; height:100%;" type="text" class="form-control input-lg" name="content" id="content"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+            <div class="form-group">
+                <div  style="display:flex; justify-content:space-between;">
+                    <button type="submit" class="btn btn-success">Save</button>
+
+                    <a href="#"  class="btn btn-danger" data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+

@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <title>HOSPITAL MASTER</title>
+  <!--favicon-->
+  <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="/static/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+           <link rel="stylesheet" type="text/html" href="/static/css/main.css">
+
+           <style>
+		     #mainContent{
+				max-width: 100% !important;
+				overflow: hidden;
+				overflow-wrap: break-word;
+			}
+			#mainContent2{
+					max-width: 25% !important;
+					overflow-wrap: break-word;
+			}
+             .preloader-wrapper {
+	height: 100vh;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 120px;
+}
+
+           </style>
+</head>
+
+<body id="mainContent">
+
+<!-- Page Preloader -->
+<div class="preloader-wrapper" >
+  <center>
+
+    <div class="preloader">
+        <img src="/static/805.gif" alt="Loading...">
+    </div>
+  </center>
+</div>
+{{{body}}}
+
+
+<script type="text/javascript" src="/static/ckeditor1.js"></script>
+
+<script >
+	ClassicEditor
+		.create( document.querySelector( '#content1' ), {
+		})
+		.catch( err => {
+			console.error( err.stack );
+		} );
+	ClassicEditor
+		.create( document.querySelector( '#content' ), {
+		})
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+
+            <script src="/static/js/jquery.min.js"></script>
+            <script src="/static/js/bootstrap.min.js"></script>
+            <script src="/static/js/main.js"></script>
+</body>
+
+
+</html>
